@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<style type='text/css'>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .header {
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 56px;
+    }
+    .white{
+        color: rgb(20, 208, 80);
+    }
+    .button1 {
+        border: none;
+        position: relative;
+        width: 200px;
+        height: 73px;
+        padding: 0;
+        z-index: 2;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+        mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+        -webkit-mask-size: 100%;
+        cursor: pointer;
+        background-color: transparent;
+        transform: translateY(8px)
+       }
+       
+       .button1:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 0 0 0 white;
+        transition: all 2s ease;
+       }
+       
+       .button1:hover:after {
+        box-shadow: 0px -13px 56px 12px #ffffffa6;
+       }
+       
+       .button1 span {
+        position: absolute;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 100;
+        left: 50%;
+        top: 39%;
+        letter-spacing: 3px;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        color: black;
+        transition: all 2s ease;
+       }
+       
+       .button1:hover span {
+        color: white;
+       }
+       
+       .button1:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s ease;
+       }
+       
+       .button1:hover:before {
+        width: 100%;
+       }
+   
+
+       
+       .button2 {
+        --green: #1BFD9C;
+        font-size: 15px;
+        padding: 0.7em 2.7em;
+        letter-spacing: 0.06em;
+        position: relative;
+        font-family: inherit;
+        border-radius: 0.6em;
+        overflow: hidden;
+        transition: all 0.3s;
+        line-height: 1.4em;
+        border: 2px solid var(--green);
+        background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+        color: var(--green);
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+      }
+      
+      .button2:hover {
+        color: #82ffc9;
+        box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+      }
+      
+      .button2:before {
+        content: "";
+        position: absolute;
+        left: -4em;
+        width: 4em;
+        height: 100%;
+        top: 0;
+        transition: transform .4s ease-in-out;
+        background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+      }
+      
+      .button2:hover:before {
+        transform: translateX(15em);
+      }
+
+    body {
+        background-image: url(' https://cutewallpaper.org/21x/vsf4efivz/Facet-side-abstract-dark-background.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    table {
+        border: 1px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 86%;
+        margin: auto;
+        color:#1BFD9C;
+        background-color:#000033;
+}
+
+    td,
+    th {
+        border: 1px solid black !important;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #1F2739;
+    }
+</style>
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Attendance System</title>
+</head>
+
+<body>
+
+    <div class='mt-3 text-center'>
+        <h1 class="header"><font class = "white">THE&nbsp;</font>  <font class="green">THIRD&nbsp;</font>   <font class = "white">EYE</font></h1>
+    </div>
+
+    {% if mess%}
+    <p class="text-center" style="color: red;font-size: 20px;">{{ mess }}</p>
+    {% endif %}
+
+    <div class="row text-center" style="padding: 20px;margin: 20px;">
+
+        <div class="col"
+            style="border-radius: 20px;padding: 0px;background-color:rgb(211,211,211,0.5);margin:0px 10px 10px 10px;min-height: 400px;">
+            <h2 style="border-radius: 20px 20px 0px 0px;background-color: #000099;color: white;padding: 10px;">Today's
+                Attendance <i class="material-icons">assignment</i></h2>
+            <a style="text-decoration: none;max-width: 300px;" href="/start">
+                <button
+                    style="font-size: 24px;font-weight: bold;width:490px;padding: 10px;margin-top: 30px;margin-bottom: 30px;"
+                    type='submit' class='button2'>Take Attendance <i
+                        class="material-icons">beenhere</i></button>
+            </a>
+            <table style="font-family: 'Open Sans', sans-serif;">
+                <tr>
+                    <td><b>S No</b></td>
+                    <td><b>Name</b></td>
+                    <td><b>ID</b></td>
+                    <td><b>Time</b></td>
+                </tr>
+                {% if l %}
+
+                {% for i in range(l) %}
+                <tr>
+                    <td>{{ i+1 }}</td>
+                    <td>{{ names[i] }}</td>
+                    <td>{{ rolls[i] }}</td>
+                    <td>{{ times[i] }}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </table>
+
+        </div>
+
+        <div class="col"
+            style="border-radius: 20px;padding: 0px;background-color:rgb(211,211,211,0.5);margin:0px 10px 10px 10px;height: 400px;">
+            <form action='/add' method="POST" enctype="multipart/form-data">
+                <h2 style="border-radius: 20px 20px 0px 0px;background-color: #0b4c61;color: white;padding: 10px;">Add
+                    New Student <i class="material-icons">control_point_duplicate</i></h2>
+                <label style="font-size: 20px;"><b>Enter New Student Name*</b></label>
+                <br>
+                <input type="text" id="newusername" name='newusername'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+                <br>
+                <label style="font-size: 20px;"><b>Enter New Student Id*</b></label>
+                <br>
+                <input type="number" id="newusereid" name='newuserid'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;" required>
+                <br>
+                <button type="submit" class="button1">
+                    <span>Add Students</span>
+                  </button>
+                <br>
+                <h5 style="padding: 25px;"><i>Total Students in a Class: {{totalreg}}</i></h5>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
